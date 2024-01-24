@@ -1,16 +1,17 @@
 package spring.bootrestfulwebservices.service;
 
+import spring.bootrestfulwebservices.dto.UserDto;
 import spring.bootrestfulwebservices.entity.User;
 
 import java.util.List;
 
 public interface UserService {
-    User createUser(User user);
-    User getUserById(Long userId);
+    UserDto createUser(UserDto user);
+    UserDto getUserById(Long userId);
 
-    List<User> getAllUsers();
+    List<UserDto> getAllUsers();
 
-    User updateUser(User user);
+    UserDto updateUser(UserDto user);
 
     void deleteUser(Long userId);
 }
